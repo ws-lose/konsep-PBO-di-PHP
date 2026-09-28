@@ -35,9 +35,7 @@ $mhs2->semester = 2;
 echo "<h3>Data Mahasiswa 1</h3>";
 $mhs1->tampilkanData();
 
-echo "<br>";
 
 echo "<h3>Data Mahasiswa 2</h3>";
 $mhs2->tampilkanData();
-
 ?>

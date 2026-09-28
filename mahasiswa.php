@@ -53,12 +53,10 @@ $mhs3->nilai = 65;
 echo "<h3>Mahasiswa 1</h3>";
 $mhs1->tampilkanData();
 
-echo "<br>";
 
 echo "<h3>Mahasiswa 2</h3>";
 $mhs2->tampilkanData();
 
-echo "<br>";
 
 echo "<h3>Mahasiswa 3</h3>";
 $mhs3->tampilkanData();
