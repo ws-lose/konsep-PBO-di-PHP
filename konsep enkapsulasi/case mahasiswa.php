@@ -5,11 +5,13 @@ class Mahasiswa {
     private $prodi;
     private $nilai;
     private $grade;
+    private $semester;
 
-    public function __construct($nim, $nama, $prodi) {
+    public function __construct($nim, $nama, $prodi, $semester) {
         $this->nim = $nim;
         $this->nama = $nama;
         $this->prodi = $prodi;
+        $this->semester = $semester;
     }
 
     public function setNilai($nilai) {
@@ -52,12 +54,16 @@ class Mahasiswa {
     public function getGrade() {
         return $this->grade;
     }
+    public function getSemester() {
+        return $this->semester;
+    }
 }
 
 $mhs1 = new Mahasiswa(
-    "2301001",
-    "Andi",
-    "Sistem Informasi"
+    "202490",
+    "Arifin",
+    "Sistem Informasi",
+    5
 );
 
 $mhs1->setNilai(100);
@@ -65,6 +71,7 @@ $mhs1->setNilai(100);
 echo "NIM : " . $mhs1->getNim() . "<br>";
 echo "Nama : " . $mhs1->getNama() . "<br>";
 echo "Prodi : " . $mhs1->getProdi() . "<br>";
+echo "Semester : " . $mhs1->getSemester() . "<br>";
 echo "Nilai : " . $mhs1->getNilai() . "<br>";
 echo "Grade : " . $mhs1->getGrade() . "<br>";
 ?>
